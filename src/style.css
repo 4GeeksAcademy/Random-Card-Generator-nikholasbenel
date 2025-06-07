@@ -1,5 +1,69 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: #f8f9fa;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-body{
-    background: white;
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.card {
+  width: 350px;
+  height: 500px;
+  background: white;
+  border: 4px solid #333;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.card-top,
+.card-bottom {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.card-top {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+
+.card-bottom {
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  transform: rotate(180deg);
+}
+
+.card-value {
+  font-size: 8rem;
+  text-align: center;
+  margin-top: 140px;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
 }
